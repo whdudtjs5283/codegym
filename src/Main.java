@@ -23,5 +23,5 @@ public class Main {
      */
     public static void solution1() {
         System.out.println("아미고는 아주 영리하다");
-    };
+    }
 }
