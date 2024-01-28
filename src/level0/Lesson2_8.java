@@ -1,9 +1,9 @@
-import java.sql.SQLOutput;
+package level0;
 
 /**
  * CodeGym 과제
  */
-public class Main {
+public class Lesson2_8 {
     public static void main(String[] args) {
         solution4_3();
     }
