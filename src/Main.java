@@ -5,7 +5,83 @@ import java.sql.SQLOutput;
  */
 public class Main {
     public static void main(String[] args) {
-        solution3_3();
+        solution4_3();
+    }
+
+    /**
+     * CodeGym / Java Course / 자바 구문 / 레벨 0 요약
+     * 레벨 0, 레슨 8
+     *
+     * 몇 줄을 코멘트로 처리하여
+     * 2 더하기 3은 5입니다를
+     * 화면에 출력하십시오.
+     *
+     * 메모: 변수를 선언한 줄을 코멘트로 처리하지 마십시오.
+     * 요구 사항:
+     * •	프로그램이 "2 더하기 3은 5입니다"를 화면에 출력해야 합니다.
+     * •	변수를 선언하는 줄을 변경하지 마십시오.
+     * •	적어도 한 줄은 코멘트로 처리해야 합니다.
+     * •	출력을 담당하는 명령을 변경하거나 추가하지 마십시오. 출력 명령을 코멘트로 처리할 수 있습니다.
+     */
+    public static void solution4_3() {
+        int a = 3;
+        int b = 2;
+
+        // System.out.print("둘");
+        System.out.print(b);
+        System.out.print(" 더하기 ");
+        // System.out.print(" 빼기 ");
+        System.out.print(a);
+        // System.out.print("셋");
+        // System.out.print("은 ");
+        System.out.print("은 ");
+        // System.out.print("다섯입니다");
+        System.out.print((a + b) + "입니다");
+    }
+
+    /**
+     * CodeGym / Java Course / 자바 구문 / 레벨 0 요약
+     * 레벨 0, 레슨 8
+     *
+     * 해당 줄에 코멘트를 제거하면 프로그램은 12 및 2를 출력합니다(12를 먼저 출력한 후에 2 출력).
+     * 요구 사항:
+     * •	프로그램이 숫자 12와 2를 출력해야 합니다.
+     * •	변수를 선언하는 줄은 변경하지 마십시오.
+     * •	프로그램에는 int 변수 두 개만 있어야 합니다.
+     * •	화면 출력을 담당하는 줄을 변경하지 마십시오
+     * •	한 줄은 코멘트 처리를 제거하고 나머지 줄은 그대로 두어야 합니다.
+     */
+    public static void solution4_2() {
+        int x = 2;
+        int y = 12;
+
+        // y = x * y;
+        y = x + y;
+
+        x = y - x;
+        y = y - x;
+
+        System.out.println(x);
+        System.out.println(y);
+    }
+
+    /**
+     * CodeGym / Java Course / 자바 구문 / 레벨 0 요약
+     * 레벨 0, 레슨 8
+     *
+     * "버그가 아니라 기능입니다."를 출력하는 프로그램을 작성하십시오.
+     *
+     * 예제 출력:
+     * 버그가 아니라 기능입니다.
+     * 요구 사항:
+     * •	텍스트를 출력하는 프로그램이어야 합니다.
+     * •	"버그가 아니라"라는 문구로 텍스트를 시작해야 합니다.
+     * •	텍스트를 마침표로 끝내야 합니다.
+     * •	텍스트는 스페이스와 구두점을 포함하여 32자로 구성해야 합니다.
+     * •	출력한 텍스트는 과제 조건과 일치해야 합니다.
+     */
+    public static void solution4_1() {
+        System.out.println("버그가 아니라 기능입니다.");
     }
 
     /**
@@ -49,7 +125,6 @@ public class Main {
 
 
     /**
-     *
      * CodeGym / Java Course / 자바 구문 / 엘리, 변수, 데이터 유형
      * 레벨 0, 레슨 4
      * "엘리 선생님은 명석합니다"라는 문구를 5번 출력하는 프로그램을 작성해 보십시오. 매번 새 줄에 출력합니다.
