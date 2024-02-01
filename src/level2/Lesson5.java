@@ -4,7 +4,7 @@ package level2;
  * CodeGym / Java Course / 자바 구문 / 변수를 생성하는 다양한 방법
  * 레벨 2, 레슨 5
  */
-public class lesson5 {
+public class Lesson5 {
     public static void main(String[] args) {
 //        solution1();
 //        solution2();
