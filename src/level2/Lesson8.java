@@ -8,7 +8,97 @@ public class Lesson8 {
     public static void main(String[] args) {
 //        solution1();
 //        solution2();
-        solution3();
+//        solution3();
+//        solution4();
+//        solution5();
+        solution6();
+    }
+
+    /**
+     * solution6
+     * @param s
+     */
+    public static void print3_2(String s) {
+        System.out.print(s + " ");
+        System.out.print(s + " ");
+        System.out.print(s);
+    }
+    /**
+     * Implement the print3 method. The method should display the passed string (word) three times, but on the same line.
+     * Words must be separated by a space and should not merge into one.
+     * 요구 사항:
+     * •	The program should display text on the screen.
+     * •	The main method should not call System.out.println or System.out.print.
+     * •	The print3 method should display the text on the screen.
+     * •	The main method should call the print3 method only twice.
+     * •	The print3 method should display the passed string (word) three times, but on the same line.
+     */
+    private static void solution6() {
+        print3_2("window");
+        print3_2("file");
+    }
+
+    /**
+     * solution5
+     * @param s
+     */
+    public static void print3(String s) {
+        System.out.println(s);
+        System.out.println(s);
+        System.out.println(s);
+    }
+
+    /**
+     * Implement the print3 method. The method should display the passed string 3 times.
+     * Each time, on a new line.
+     * 요구 사항:
+     * •	The program should display text on the screen.
+     * •	The main method should not call System.out.println or System.out.print.
+     * •	The print3 method should display the text on the screen.
+     * •	The main method should call the print3 method only once.
+     * •	The print3 method should display the string 3 times. Each time, on a new line.
+     */
+    private static void solution5() {
+        print3("I love you!");
+    }
+
+    /**
+     *  solution4
+     * @param a
+     * @param b
+     * @param c
+     * @param d
+     * @return
+     */
+    public static int min(int a, int b, int c, int d) {
+        int num1 = a < b ? a : b;
+        int num2 = c < d ? c : d;
+        return min(num1, num2);
+    }
+
+    public static int min2(int a, int b) {
+        return a < b ? a : b;
+    }
+    /**
+     * Write a function that computes the minimum of four numbers.
+     * The function min(a, b, c, d) should use (call) the function min(a, b)
+     *
+     * Hint:
+     * You need to write the body of the two existing min functions.
+     * 요구 사항:
+     * •	The program should display text on the screen.
+     * •	The min methods should not display text on the screen.
+     * •	The main method should call min(a, b) and min(a, b, c, d).
+     * •	The main method should display the result of the min methods. Each time, on a new line.
+     * •	The min(a, b) method must return the minimum of the numbers a and b.
+     * •	The min(a, b, c, d) method must use the min(a, b) method.
+     * •	The min(a, b, c, d) method must return the minimum of the numbers a, b, c, and d.
+     */
+    private static void solution4() {
+        System.out.println(min(-20, -10));
+        System.out.println(min(-20, -10, -30, -40));
+        System.out.println(min(-20, -10, -30, 40));
+        System.out.println(min(-40, -10, -30, 40));
     }
 
     /**
