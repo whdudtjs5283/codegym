@@ -8,7 +8,51 @@ public class Lesson4 {
     public static void main(String[] args) {
 //        solution1();
 //        solution2();
-        solution3();
+//        solution3();
+//        solution4();
+        solution5();
+    }
+
+    /**
+     * Display the sum of numbers from 1 to 5, line by line (there should be 5 lines):
+     * 1
+     * 1+2=3
+     * 1+2+3=6
+     * ...
+     *
+     * Example output:
+     * 1
+     * 3
+     * 6
+     * ...
+     * 요구 사항:
+     * •	The program should output text.
+     * •	The displayed text should contain 5 lines.
+     * •	The number in each new line must be greater than the previous one.
+     * •	The displayed text must match the task conditions.
+     */
+    private static void solution5() {
+        System.out.println(1);
+        System.out.println(1 + 2);
+        System.out.println(1 + 2 + 3);
+        System.out.println(1 + 2 + 3 + 4);
+        System.out.println(1 + 2 + 3 + 4 + 5);
+    }
+
+    /**
+     * Display the product of the 10 numbers from 1 to 10.
+     * The result is a single number.
+     *
+     * Hint:
+     * it will be three million and change.
+     * 요구 사항:
+     * •	The program must display an integer.
+     * •	The main method should call the System.out.println method.
+     * •	The displayed number should be more than three million.
+     * •	The displayed number must match the task conditions.
+     */
+    private static void solution4() {
+        System.out.println(1 * 2 * 3 * 4 * 5 * 6 * 7 * 8 * 9 * 10);
     }
 
     /**
