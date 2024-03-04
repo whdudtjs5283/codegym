@@ -8,7 +8,41 @@ public class Lesson6 {
     public static void main(String[] args) {
 //        solution1();
 //        solution2();
-        solution3();
+//        solution3();
+//        solution4();
+        solution5();
+    }
+
+    /**
+     * Display the following: 日本語
+     * 요구 사항:
+     * •	The program should output text.
+     * •	The The text should begin with "日".
+     * •	The text should end with "語".
+     * •	The text should consist of 3 symbols.
+     * •	The displayed text must match the task conditions.
+     */
+    private static void solution5() {
+        System.out.println("日本語");
+    }
+
+    /**
+     * Display the following text (two lines):
+     * This is a Windows path: "C:\Program Files\Java\jdk1.8.0_172\bin"
+     * This is a Java string: \"C:\\Program Files\\Java\\jdk1.8.0_172\\bin\"
+     *
+     * Hint:
+     * \" – Escape sequence for double quote character.
+     * \\ – Escape sequence for a backslash (\) character.
+     * 요구 사항:
+     * •	The program should output text.
+     * •	Two lines must be displayed.
+     * •	The first line of text should be: This is a Windows path: "C:\Program Files\Java\jdk1.8.0_172\bin"
+     * •	The second line of text should be: This is a Java string: \"C:\\Program Files\\Java\\jdk1.8.0_172\\bin\"
+     */
+    private static void solution4() {
+        System.out.println("This is a Windows path: \"C:\\Program Files\\Java\\jdk1.8.0_172\\bin\"");
+        System.out.println("This is a Java string: \\\"C:\\\\Program Files\\\\Java\\\\jdk1.8.0_172\\\\bin\\\"");
     }
 
     /**
