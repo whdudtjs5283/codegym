@@ -10,7 +10,37 @@ public class Lesson8 {
     public static void main(String[] args) throws IOException {
 //        solution1();
 //        solution2();
-        solution3();
+//        solution3();
+        solution4();
+    }
+
+    /**
+     * Use the keyboard to separately enter the name, number1, and number2.
+     * Display the following phrase:
+     * <name> will receive <number1> in <number2> years.
+     *
+     * Here's an example:
+     * Nick will receive 10000 in 5 years.
+     * 요구 사항:
+     * •	The program should output text.
+     * •	The program must read data from the keyboard.
+     * •	The displayed text must contain the entered name.
+     * •	The displayed text must contain the entered number1.
+     * •	The displayed text must contain the entered number2.
+     * •	The displayed text must fully match the task conditions.
+     */
+    private static void solution4() throws IOException {
+        InputStream inputStream = System.in;
+        Reader inputStreamReader = new InputStreamReader(inputStream);
+        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+
+        String name = bufferedReader.readLine();
+        String sNumber1 = bufferedReader.readLine();
+        int number1 = Integer.parseInt(sNumber1);
+        String sNumber2 = bufferedReader.readLine();
+        int number2 = Integer.parseInt(sNumber2);
+
+        System.out.println(name + " will receive " + number1 + " in " + number2 + " years.");
     }
 
     /**
