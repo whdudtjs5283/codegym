@@ -11,7 +11,57 @@ public class Lesson8 {
 //        solution1();
 //        solution2();
 //        solution3();
-        solution4();
+//        solution4();
+//        solution5();
+        solution6();
+    }
+
+    /**
+     * Use the keyboard to enter three names, then display:
+     * name1 + name2 + name3 = Pure love. Ooo la-la!
+     *
+     * For example:
+     * Kevin + Eva + Angelica = Pure love. Ooo la-la!
+     * 요구 사항:
+     * •	The program should output text.
+     * •	The program must read data from the keyboard.
+     * •	The displayed text must contain the entered name1.
+     * •	The displayed text must contain the entered name2.
+     * •	The displayed text must contain the entered name3.
+     * •	The displayed text must fully match the task conditions.
+     */
+    private static void solution6() throws IOException {
+        InputStream inputStream = System.in;
+        Reader inputStreamReader = new InputStreamReader(inputStream);
+        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+
+        String name1 = bufferedReader.readLine();
+        String name2 = bufferedReader.readLine();
+        String name3 = bufferedReader.readLine();
+
+        System.out.println(name1 + " + " + name2 + " + " + name3 + " = Pure love. Ooo la-la!");
+    }
+
+    /**
+     * Use the keyboard to enter a name and display the following:
+     * <name> makes $120,000 a year. Ha-ha-ha!
+     *
+     * For example:
+     * Sara makes $120,000 a year. Ha-ha-ha!
+     * 요구 사항:
+     * •	The program should output text.
+     * •	The program must read data from the keyboard.
+     * •	The displayed text must contain the entered name.
+     * •	The displayed text must fully match the task conditions.
+     */
+    private static void solution5() throws IOException {
+        InputStream inputStream = System.in;
+        Reader inputStreamReader = new InputStreamReader(inputStream);
+        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+
+        String name = bufferedReader.readLine();
+
+        System.out.println(name + " makes $120,000 a year. Ha-ha-ha!");
     }
 
     /**
